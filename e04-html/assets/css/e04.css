@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 1.42857143;
+}
+
+section {
+  padding: 50px 7%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.banner {
+  background-image: url('../img/sayagata-400px.png');
+  height: 100%
+}
+
+.switch-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 40%;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0px 2px 2px rgba(27, 122, 102, 0.3);
+}
+
+@media (max-width: 940px) {
+  .switch-box {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .switch-box {
+    width: 60%;
+  }
+}
+
+@media (max-width: 630px) {
+  .switch-box {
+    width: 100%;
+  }
+}
+
+.top-bar {
+  background-image: url('../img/sayagata-400px.png');
+  width: 100%;
+  padding: 50px 7%;
+}
+
+.top-bar a {
+  float: right;
+}
+
+h1 {
+  margin: 0;
+  font-weight: lighter;
+}
+
+.switch-box a {
+  display: inline-block;
+}
+
+.switch-box a img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  filter: hue-rotate(50deg);
+  transition: all 0.2s;
+  margin: 0 15px;
+}
+
+span {
+  display: block;
+}
+
+.switch-box a img:hover {
+  box-shadow: 0px 0px 0px 4px #FCFCFC, 0px 0px 0px 6px #D1D1D1;
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+
+.field {
+  display: block;
+  padding: 8px 10px;
+  border: 1px solid #AAA;
+  border-radius: 3px;
+  background-color: #FFF;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.field:focus {
+  box-shadow: 0px 0px 0px 1px #66B9FF;
+}
+
+.btn-container {
+  margin-top: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 10px;
+  border: 1px solid;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-right: 5px;
+}
+
+.btn.cancel {
+  background-color: #E53935;
+  color: #FFF;
+  border-color: rgba(229, 57, 53, 0.8);
+}
+
+.btn.cancel:hover {
+  background-color: rgba(229, 57, 53, 0.6);
+}
+
+.btn.submit {
+  background-color: #66BB6A;
+  color: #FFF;
+  border-color: rgba(102, 187, 106, 0.5);
+}
+
+.btn.submit:hover {
+  background-color: rgba(102, 187, 106, 0.5);
+}
